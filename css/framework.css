@@ -5,7 +5,16 @@
 .align-center {
     align-items: center;
 }
+/* flex-component */
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* flex-component */
+
 /* End Box */
+
 /* Start  Padding + Margin */
 .p-10 {
     padding: 10px;
@@ -22,6 +31,11 @@
 .mb-5 {
     margin-bottom: 5px;
 }
+/* width */
+.w-full {
+    width: 100%;
+}
+/* width */
 /* End Padding + Margin */
 /* Start Color */
 .bg-white {
@@ -29,6 +43,9 @@
 }
 .c-black {
     color: black;
+}
+.c-white {
+    color: white;
 }
 /* End Color */
 /* Start Position */
@@ -56,3 +73,8 @@
     }
 }
 /* @media max-width: 767px */
+
+
+
+
+
