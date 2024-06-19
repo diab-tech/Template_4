@@ -18,6 +18,9 @@
     justify-content: space-between;
 }
 /* flex-component */
+.d-block {
+    display: block;
+}
 /* Start Grid */
     .d-grid {
         display: grid;
@@ -35,6 +38,9 @@
 .p-20 {
     padding: 20px;
 }
+.m-0 {
+    margin: 0;
+}
 .m-20 {
     margin: 20px;
 }
@@ -48,17 +54,29 @@
 .w-full {
     width: 100%;
 }
+.w-fit {
+    width: fit-content;
+}
 /* width */
 /* End Padding + Margin */
 /* Start Color */
 .bg-white {
     background-color: white;
 }
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
 .c-black {
     color: black;
 }
 .c-white {
     color: white;
+}
+.c-grey {
+    color: var(--grey-color)
 }
 /* End Color */
 /* Start Position */
