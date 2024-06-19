@@ -18,7 +18,14 @@
     justify-content: space-between;
 }
 /* flex-component */
-
+/* Start Grid */
+    .d-grid {
+        display: grid;
+    }
+    .gap-20 {
+        gap: 20;
+    }
+/* End Grid */
 /* End Box */
 
 /* Start  Padding + Margin */
@@ -71,11 +78,19 @@
 .rad-6 {
     border-radius: 6px;
 }
+.rad-10 {
+    border-radius: 10px;
+}
 /* End Border */
 /* @media max-width: 767px */
 @media (max-width: 767px) {
     .hide-mobile {
         display: none;
+    }
+}
+@media (max-width: 767px){
+        .text-c-mobile {
+        text-align: center;
     }
 }
 /* @media max-width: 767px */
