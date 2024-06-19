@@ -50,21 +50,16 @@ ul {
 }
 /* Start Component */
 /* main-title */
-.page .content .boxes .welcome .title .main-title {
+.page .content .boxes .title .main-title > h2 {
     font-size: 25px;
-    position: absolute;
     text-transform: capitalize;
-    top: -40px;
-    padding: 20px 10px;
-    /* margin-top: 10px; */
-    display: inline;
+    margin-top: 0px;
     letter-spacing: -1px;
 }
 .page .content .boxes .welcome .title p {
     color: #777;
-    position: absolute;
-    top: 20px;
-    padding-left: 10px;
+    margin-top: -10px;
+
 }
 /* main-title */
 
@@ -203,8 +198,8 @@ ul {
     /* margin: 20px; */
 }
 .page .content .boxes .welcome-header {
-background-color: #eee;
-    padding: 20px 10px 0 0;
+    background-color: #eee;
+    padding: 20px 10px 10px ;
     border-radius: 10px;
 
 }
@@ -237,5 +232,19 @@ background-color: #eee;
     color: var(--grey-color);
     font-size: 14px;
 }
+/* ==========draft=========== */
+.page .wrapper .draft {
+    background-color: white;
+    padding: 0px 10px;
+
+}
+.page .wrapper .draft .title h2 {
+
+}
+.page .wrapper .draft .title p {
+    margin-top: -10px;
+
+}
+/* ==========draft=========== */
 
 /* End Boxes */
