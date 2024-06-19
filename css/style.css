@@ -50,25 +50,25 @@ ul {
 }
 /* Start Component */
 /* main-title */
-.main-title {
-    position: relative;
-    text-transform: capitalize;
-    font-size: 35px;
-    letter-spacing: -1px;
-    margin: 20px 20px 40px;
-}
-.main-title::after {
+.page .content .boxes .welcome .title .main-title {
+    font-size: 25px;
     position: absolute;
-    content: "";
-    width: 120px;
-    height: 5px;
-    background: linear-gradient(90deg, black 35%, white 25%);
-    top: 45px;
-    left: 0px;
+    text-transform: capitalize;
+    top: -40px;
+    padding: 20px 10px;
+    /* margin-top: 10px; */
+    display: inline;
+    letter-spacing: -1px;
+}
+.page .content .boxes .welcome .title p {
+    color: #777;
+    position: absolute;
+    top: 20px;
+    padding-left: 10px;
 }
 /* main-title */
 
-/* Start Component */
+/* End Component */
 /* Start Sidebar */
 .sidebar {
     /* : horizontal vertical spread color */
@@ -170,3 +170,72 @@ ul {
     width: 35px;
 }
 /* End Header */
+/* Start Boxes */
+.main-page-title {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 35px;
+    letter-spacing: -1px;
+    margin: 20px 20px 40px;
+}
+.main-page-title::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, black 35%, white 25%);
+    top: 45px;
+    left: 0px;
+}
+.page .content .wrapper{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.page .content .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 15px;
+}
+.page .content .boxes .box {
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 20px; */
+}
+.page .content .boxes .welcome-header {
+background-color: #eee;
+    padding: 20px 10px 0 0;
+    border-radius: 10px;
+
+}
+.page .content .boxes .welcome img {
+    width: 200px;
+}
+.page .boxes .welcome .content {
+    padding: 20px 60px;
+    margin: 70px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+}
+.page .boxes .welcome .image {
+    position: relative;
+}
+.page .boxes .welcome .image img{
+    width: 55px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    border: 4px solid white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.page .boxes .welcome .content span:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.page .boxes .welcome .content span:nth-child(2) {
+    color: var(--grey-color);
+    font-size: 14px;
+}
+
+/* End Boxes */
