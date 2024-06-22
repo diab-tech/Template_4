@@ -49,7 +49,7 @@ ul {
     background-color: #f1f5f9;
 }
 /* Start Component */
-/* main-title */
+/* main-box-title */
 .page .content .wrapper .box .title .main-title {
     font-size: 25px;
     text-transform: capitalize;
@@ -59,9 +59,9 @@ ul {
 .page .content .wrapper .box .title p {
     color: #777;
     margin-top: 5px;
-
+    text-transform: capitalize;
 }
-/* main-title */
+/* main-box-title */
 
 /* End Component */
 /* Start Sidebar */
@@ -187,7 +187,7 @@ ul {
     margin-right: 20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
 }
 @media(max-width: 767px) {
@@ -207,10 +207,11 @@ ul {
 .page .content .wrapper .box {
     background-color: white;
     border-radius: 10px;
+    padding: 20px 15px;
+
 }
 .page .content .wrapper .box .header {
     background-color: #eee;
-    padding: 20px 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -255,8 +256,11 @@ ul {
     text-transform: capitalize;
 }
 .page .wrapper .welcome .visit {
-    margin: 0 15px 15px auto;
-    padding: 5px 5px 7px;
+    margin: 20px 0px 0px auto;
+    padding: 4px 10px 6px;
+    text-transform: capitalize;
+    transition: 0.3s;
+
 }
 .page .wrapper .welcome .visit:hover {
     background-color: var(--blue-alt-color)
@@ -267,13 +271,110 @@ ul {
     padding: 0px 10px;
 
 }
-.page .wrapper .draft .title h2 {
-
+.page .wrapper .draft .body .title {
+    margin-bottom: 20px;
 }
-.page .wrapper .draft .title p {
-    margin-top: -10px;
-
+.page .wrapper .draft .body .title,
+.page .wrapper .draft .body .thought {
+    padding: 7px;
+    border: none;
+    background-color: #eee;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* ظل ناعم حول العنصر */
+    0 1px 3px rgba(0, 0, 0, 0.08); /* ظل داخلي طفيف */
+    transition: box-shadow 0.3s ease-in-out; /* تأثير الانتقال */
+}
+.page .wrapper .draft .body .title:focus,
+.page .wrapper .draft .body .thought:focus {
+    outline: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), /* ظل أقوى عند التركيز */
+                0 2px 4px rgba(0, 0, 0, 0.1); /* ظل داخلي أقوى */
+}
+.page .wrapper .draft .body .title::placeholder,
+.page .wrapper .draft .body .thought::placeholder {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.page .wrapper .draft .body .thought {
+    min-height: 200px;
+    resize: none;
+}
+.page .draft .save {
+    padding: 4px 10px 6px;
+    margin: 20px 0px 0px auto;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.page .wrapper .draft .save:hover {
+    background-color: var(--blue-alt-color)
 }
 /* ==========draft=========== */
+/* ==========target=========== */
+.page .target .money, .page .target .projects, .page .target .team {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.page .target .icon {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.page .target .money .icon {
+    background-color: rgb(0 117 255 / 20%);
+}
+.page .target .projects .icon {
+    background-color: rgb(245 158 11 / 20%);
+}
+.page .target .team .icon {
+    background-color: rgb(34 197 94 / 20%);
+}
+.page .target .icon i {
+    margin: 50% auto;
+    transform: translateY(-50%);
+}
+.page .target .package{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.page .target .package span:first-child {
+    color: var(--grey-color);
+    text-transform: capitalize; 
+}
+.page .target .package span:nth-child(2) {
+    margin: 10px 0;
+}
+.page .target .projects {
+    margin: 20px 0;
+}
+.page .target .team .prog {
+    background-color: rgb(34 197 94 / 20%);
+}
+.page .target .team .prog .fill::before {
+    position: absolute;
+    content: "";
+    border-width: 7px;
+    border-color: var(--green-color) transparent transparent transparent;
+    border-style: solid;
+    right: -5px;
+    top: -13px;
+}
+.page .target .team .prog .fill::after {
+    position: absolute;
+    content: "75%";
+    width: 40px;
+    color: white;
+    height: 20px;
+    padding: 5px 2px 0px;
+    font-size: 13px;
+    background-color: var(--green-color);
+    text-align: center;
+    right: -20px;
+    top: -38.5px;
+    border-radius: 6px;
+}
 
+
+/* ==========target=========== */
 /* End Boxes */
