@@ -310,7 +310,7 @@ ul {
 }
 /* ==========draft=========== */
 /* ==========target=========== */
-.page .target .money, .page .target .projects, .page .target .team {
+.page .target .body > div {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -337,44 +337,67 @@ ul {
     display: flex;
     flex-direction: column;
     flex: 1;
+    text-transform: capitalize; 
 }
 .page .target .package span:first-child {
     color: var(--grey-color);
-    text-transform: capitalize; 
 }
 .page .target .package span:nth-child(2) {
     margin: 10px 0;
+    font-weight: bold;
 }
-.page .target .projects {
-    margin: 20px 0;
+/* ============= */
+.page .target .money .prog {
+    background-color: rgb(0 117 255 / 20%);
 }
+.page .target .money .prog .blue::before{
+    border-color: var(--blue-color) transparent transparent transparent;
+}
+.target .money .prog .blue span {
+    background-color: var(--blue-color);
+}
+/* ============= */
+.page .target .projects .prog {
+    background-color: rgb(245 158 11 / 20%);
+}
+.page .target .projects .prog .orange::before{
+    border-color: var(--orange-color) transparent transparent transparent;
+}
+.target .projects .prog .orange span {
+    background-color: var(--orange-color);
+}
+/* ============= */
 .page .target .team .prog {
     background-color: rgb(34 197 94 / 20%);
 }
-.page .target .team .prog .fill::before {
+.page .target .team .prog .green::before{
+    border-color: var(--green-color) transparent transparent transparent;
+}
+.target .team .prog .green span {
+    background-color: var(--green-color);
+}
+/* ============= */
+.page .target .prog .fill > span {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    line-height: 20px;
+    padding: 2px 6px;
+    font-size: 13px;
+    right: -18.5px;
+    top: -38px;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    border-radius: 6px;
+}
+.page .target .prog .fill::before {
     position: absolute;
     content: "";
-    border-width: 7px;
-    border-color: var(--green-color) transparent transparent transparent;
+    border-width: 6px;
     border-style: solid;
     right: -5px;
     top: -13px;
 }
-.page .target .team .prog .fill::after {
-    position: absolute;
-    content: "75%";
-    width: 40px;
-    color: white;
-    height: 20px;
-    padding: 5px 2px 0px;
-    font-size: 13px;
-    background-color: var(--green-color);
-    text-align: center;
-    right: -20px;
-    top: -38.5px;
-    border-radius: 6px;
-}
-
-
 /* ==========target=========== */
 /* End Boxes */
