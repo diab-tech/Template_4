@@ -400,4 +400,18 @@ ul {
     top: -13px;
 }
 /* ==========target=========== */
+/* ==========Start-Task=========== */
+.wrapper .tasks .task:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+.wrapper .tasks .task #line-through span {
+    text-decoration:line-through;
+    opacity: 0.5;
+}
+.wrapper .tasks .task:not(:nth-of-type(4)) i:hover{
+    color: var(--red-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* ==========End-Task=========== */
 /* End Boxes */

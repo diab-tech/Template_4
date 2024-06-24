@@ -38,6 +38,9 @@
 .p-20 {
     padding: 20px;
 }
+.pt-20 {
+    padding-top: 20px;
+}
 .pb-20 {
     padding-bottom: 20px;
 }
@@ -55,6 +58,9 @@
 }
 .mb-5 {
     margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
 }
 .mb-20 {
     margin-bottom: 20px;
@@ -104,8 +110,20 @@
 .txt-c {
     text-align: center;
 }
+.fw-bold {
+    font-weight: bold;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-15 {
+    font-size: 15px;
+}
 .fs-14 {
     font-size: 14px;
+}
+.fs-13 {
+    font-size: 13px;
 }
 /* end font */
 /* Start Border */
@@ -128,8 +146,11 @@
     }
 }
 /* @media max-width: 767px */
-
-
+/* ===========opacity============ */
+.half-opacity {
+    opacity: 0.5;
+}
+/* ===========opacity============ */
 
 
 
