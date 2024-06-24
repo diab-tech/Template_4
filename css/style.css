@@ -59,6 +59,7 @@ ul {
 .page .content .wrapper .box .title p {
     color: #777;
     margin-top: 5px;
+    margin-bottom: 25px;
     text-transform: capitalize;
 }
 /* main-box-title */
@@ -280,7 +281,7 @@ ul {
     border: none;
     background-color: #eee;
     border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* ظل ناعم حول العنصر */
+    box-shadow: 0 4px 6 px rgba(0, 0, 0, 0.1), /* ظل ناعم حول العنصر */
     0 1px 3px rgba(0, 0, 0, 0.08); /* ظل داخلي طفيف */
     transition: box-shadow 0.3s ease-in-out; /* تأثير الانتقال */
 }
@@ -400,6 +401,69 @@ ul {
     top: -13px;
 }
 /* ==========target=========== */
+/* ==========start-statics=========== */
+.wrapper .statics .body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.wrapper .statics .body > div {
+    display: FLEX;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+}
+    /* ==========End-statics=========== */
+    /* ==========Start-News=========== */
+    @media (max-width: 767px) {
+
+        .wrapper .news .container, .wrapper .news .title {
+            flex-direction: column;
+            text-align: center;
+        }
+        .wrapper .news .container .content{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    @media (min-width: 768px) {
+        .wrapper .news .container .content {
+            flex: 1;
+        }
+    }
+    .wrapper .news .container:not(:last-child) {
+        border-bottom: 1px solid #eee;
+    }
+    .wrapper .news .container img {
+        width: 100px;
+        border-radius: 6px;
+    }
+    @media (min-width: 768px) {
+        .wrapper .news .container img {
+            margin-right: 15px;
+        }
+        }
+    @media (max-width: 767px) {
+        .wrapper .news .container img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    }
+    .wrapper .news .container .new-time span {
+        padding: 5px 10px;
+        display: block;
+    }
+    @media (max-width: 768px) {
+        .wrapper .news .container .new-time span {
+
+            margin-top: 15px;
+        }
+    }
+    /* ==========End-News=========== */
+
 /* ==========Start-Task=========== */
 .wrapper .tasks .task:not(:last-child){
     border-bottom: 1px solid #eee;
@@ -415,3 +479,5 @@ ul {
 }
 /* ==========End-Task=========== */
 /* End Boxes */
+
+

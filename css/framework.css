@@ -11,6 +11,10 @@
 .justify-between {
     justify-content: space-between;
 }
+.flex-1 {
+    flex: 1;
+}
+
 /* flex-component */
 .flex-between {
     display: flex;
@@ -53,6 +57,9 @@
 .mt-0 {
     margin-top: 0;
 }
+.mt-10 {
+    margin-top: 10px;
+}
 .mt-20 {
     margin-top: 20px;
 }
@@ -91,6 +98,9 @@
 .bg-blue {
     background-color: var(--blue-color);
 }
+.bg-eee {
+    background-color: #eee;
+}
 .c-black {
     color: black;
 }
@@ -110,6 +120,7 @@
 .txt-c {
     text-align: center;
 }
+<<<<<<< HEAD
 .fw-bold {
     font-weight: bold;
 }
@@ -118,12 +129,30 @@
 }
 .fs-15 {
     font-size: 15px;
+=======
+.t-transform-cap {
+    text-transform: capitalize;
+}
+.fs-13 {
+    font-size: 13px;
+>>>>>>> cb12595f6936c2c585300b53aaf03ec11ec76b4f
 }
 .fs-14 {
     font-size: 14px;
 }
+<<<<<<< HEAD
 .fs-13 {
     font-size: 13px;
+=======
+.fs-16 {
+    font-size: 16px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fw-bold {
+    font-weight: bold;
+>>>>>>> cb12595f6936c2c585300b53aaf03ec11ec76b4f
 }
 /* end font */
 /* Start Border */
