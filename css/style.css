@@ -463,7 +463,6 @@ ul {
         }
     }
     /* ==========End-News=========== */
-
 /* ==========Start-Task=========== */
 .wrapper .tasks .task:not(:last-child){
     border-bottom: 1px solid #eee;
