@@ -547,6 +547,85 @@ ul {
     font-weight: 500
 }
 /* ==========End Uploads=========== */
+/* ==========Start Progress=========== */
+.progress .body .step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.progress .body .step:nth-child(5) {
+    margin-bottom: 0px;
+}
+.progress .body .step .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+}
+.progress .body .step .done {
+    background-color: var(--blue-color);
+}
+.progress .body .step .in-progress {
+    animation-name: flash;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes flash {
+    0%
+    {
+        background-color: var(--blue-color)
+    }
+    100%
+    {
+        background-color: white;
+    }
+}
+/* .progress .body .step:last-child .dot {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--blue-color);
+    outline: 2px solid var(--blue-color);
+}*/ 
+.progress .body .step .dot::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid var(--blue-color);
+    background-color: transparent;
+
+}
+.progress .body .step:not(:nth-child(5)) .dot::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 25px;
+    background-color: var(--blue-color);
+    top: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.progress .body .image img {
+    position: absolute;
+    width: 160px;
+    opacity: 0.2;
+    top: -140px;
+    right: 0;
+}
+/* ==========End Progress=========== */
+
+
+
 /* End Boxes */
 
 
