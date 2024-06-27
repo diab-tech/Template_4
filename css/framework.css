@@ -120,7 +120,7 @@
 .txt-c {
     text-align: center;
 }
-.t-transform-cap {
+.txt-transform-cap {
     text-transform: capitalize;
 }
 .fs-13 {
@@ -134,6 +134,9 @@
 }
 .fs-16 {
     font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
 }
 .fs-25 {
     font-size: 25px;

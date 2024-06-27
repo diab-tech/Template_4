@@ -138,6 +138,10 @@ ul {
     transition: width 0.3s;
     position: relative;
     z-index: 0;
+    transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* تأثير الانتقال */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* ظل ناعم حول العنصر */
+    0 1px 3px rgba(0, 0, 0, 0.08); /* ظل داخلي طفيف */
+
 }
 .page .content .header .search::before {
     font-family: var(--fa-style-family-classic);
@@ -153,7 +157,10 @@ ul {
 }
 .page .content .header .search > input:focus {
     width: 180px;
-    box-shadow: 0 0 6px #ddd;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), /* ظل أقوى عند التركيز */
+                0 2px 4px rgba(0, 0, 0, 0.1); /* ظل داخلي أقوى */
+
+    /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); */
 }
 .page .content .header .search > input::placeholder {
     color: var(--grey-color);
@@ -281,7 +288,7 @@ ul {
     border: none;
     background-color: #eee;
     border-radius: 6px;
-    box-shadow: 0 4px 6 px rgba(0, 0, 0, 0.1), /* ظل ناعم حول العنصر */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* ظل ناعم حول العنصر */
     0 1px 3px rgba(0, 0, 0, 0.08); /* ظل داخلي طفيف */
     transition: box-shadow 0.3s ease-in-out; /* تأثير الانتقال */
 }
@@ -406,9 +413,15 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    }
+@media(min-width: 768px) {
+    .wrapper .statics .body .deleted {
+        grid-column: 2 / 3;
+    }
 }
-.wrapper .statics .body > div {
-    display: FLEX;
+    .wrapper .statics .body > div {
+    display: flex;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     gap: 10px;
@@ -478,6 +491,23 @@ ul {
     cursor: pointer;
 }
 /* ==========End-Task=========== */
+/* ==========top Search Items=========== */
+.wrapper .search .body > div span {
+    display: block;
+}
+.wrapper .search .body .items span:not(:first-child) {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.wrapper .search .body .words span {
+    margin-bottom: 30px;
+}
+.search .body .items:not(:last-child) {
+    margin-bottom: 30px
+}
+/* ==========top Search Items=========== */
 /* End Boxes */
 
 
