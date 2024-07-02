@@ -622,7 +622,67 @@ ul {
     right: 0;
 }
 /* ==========End Progress=========== */
+/* ==========Start progress=========== */
+.wrapper .reminders ul {
+    margin-left: 45px;
+    text-transform: capitalize;
+}
+.wrapper .reminders ul li span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 
+}
+.wrapper .reminders ul li p {
+    font
+}
+
+.wrapper .reminders ul li div {
+    position: relative;
+}
+.wrapper .reminders ul li div::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: -45px;
+    transform: translateY(-50%);
+}
+.wrapper .reminders ul li div::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    left: -15px;
+    top: 0;
+}
+.wrapper .reminders ul li .blue::before {
+    background-color: var(--blue-color);
+}
+.wrapper .reminders ul li .blue::after {
+    background-color: var(--blue-color);
+}
+.wrapper .reminders ul li .green::before {
+    background-color: var(--green-color);
+}
+.wrapper .reminders ul li .green::after {
+    background-color: var(--green-color);
+}
+.wrapper .reminders ul li .orange::before {
+    background-color: var(--orange-color);
+}
+.wrapper .reminders ul li .orange::after {
+    background-color: var(--orange-color);
+}
+.wrapper .reminders ul li .red::before {
+    background-color: var(--red-color);
+}
+.wrapper .reminders ul li .red::after {
+    background-color: var(--red-color);
+}
+/* ==========End progress=========== */
 
 
 /* End Boxes */
