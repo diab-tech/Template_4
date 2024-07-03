@@ -699,34 +699,71 @@ ul {
 /* ==========Start-Social=========== */
 .social .body > div {
     background-color: #eee;
-    height: 60px;
+    height: 52px;
     margin-bottom: 10px;
     text-align: center;
+    align-items: center;
+    padding-right: 10px;
+    /* overflow: hidden; */
 }
-.social .body > div > a {
-    width: 70px;
+.social .body > div .icon {
+    width: 52px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.social .body > div .icon:hover {
+    transform: scale(0.8) ;
+
+}
+.social .body > div .icon i {
     color: white;
 }
-.social .body > div > a i {
-    top: 50%;
-    transform: translateY(-50%);
+.social .body .twitter {
+    background-color: rgb(29, 161, 242,0.3);
 }
-.social .body .twitter a {
+.social .body .twitter .icon, .social .twitter .button {
     background-color: #1DA1F2;
-}
-.social .body .facebook a {
-    background-color: #1877F2;
     
 }
-.social .body .youtube a {
+.social .twitter .info span {
+    color: #1DA1F2;
+}
+.social .body .facebook {
+    background-color: rgb(0, 119, 181,0.3);
+
+}
+.social .body .facebook .icon, .social .facebook .button {
+    background-color: #1877F2;
+
+}
+.social .facebook .info span {
+    color: #1877F2;
+}
+
+.social .body .youtube {
+    background-color: rgb(255, 0, 0,0.3);
+}
+.social .body .youtube .icon, .social .youtube .button  {
     background-color: #FF0000;
     
 }
-.social .body .linkedin a {
+.social .youtube .info span {
+    color: #FF0000;
+}
+.social .body .linkedin {
+    background-color: rgb(0, 119, 181,0.3);
+}
+.social .body .linkedin .icon, .social .linkedin .button {
     background-color: #0077B5;
     
 }
+.social .linkedin .info span {
+    color: #0077B5;
+}
+
 /* ==========End-Social=========== */
 
 /* End Boxes */
