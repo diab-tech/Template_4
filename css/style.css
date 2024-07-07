@@ -195,7 +195,7 @@ ul {
     margin-right: 20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
 }
 @media(max-width: 767px) {
@@ -204,7 +204,7 @@ ul {
         margin-right: 10px;
         margin-bottom: 10px;
         display: grid;
-        grid-template-columns: minmax(100px, 1fr);
+        grid-template-columns: minmax(200px, 1fr);
         gap: 10px;
     }
     .page .wrapper .welcome .header .welcomeImage {
@@ -773,9 +773,13 @@ ul {
 /* ==========Start-Projects-Table=========== */
 /* ==========End-Projects-Table=========== */
 /* <!-- ======================Start-Table =====================--> */
+.projects .responsive-table {
+    overflow-x: auto;
+}
 .projects table{
     border-spacing: 0;
     min-width: 1000px;
+    width: 100%;
 }
 .projects table td {
     padding: 15px;
