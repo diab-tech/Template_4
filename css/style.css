@@ -772,7 +772,36 @@ ul {
 /* ==========End-Social=========== */
 /* ==========Start-Projects-Table=========== */
 /* ==========End-Projects-Table=========== */
+/* <!-- ======================Start-Table =====================--> */
+.projects table{
+    border-spacing: 0;
+    min-width: 1000px;
+}
+.projects table td {
+    padding: 15px;
+}
+.projects table thead {
+    background-color: #eee;
+    height: 20px;
+}
+.projects table tbody td {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.projects table tbody td:last-child {
+    border-right: 1px solid #eee;
+}
+.projects table tbody td img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 3px 0 #ddd;
+}
+.projects table tbody td img:not(:first-child){
+    margin-left: -20px;
+}
 
+/* <!-- ======================End-Table =====================--> */
 /* End Boxes */
 
 
